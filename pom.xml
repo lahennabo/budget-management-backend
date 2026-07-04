@@ -122,5 +122,14 @@
 			</plugin>
 		</plugins>
 	</build>
-
+    <profiles>
+        <profile>
+            <id>production</id>
+            <properties>
+                <maven.compiler.source>25</maven.compiler.source>
+                <maven.compiler.target>25</maven.compiler.target>
+                <maven.compiler.release>25</maven.compiler.release>
+            </properties>
+        </profile>
+    </profiles>
 </project>
