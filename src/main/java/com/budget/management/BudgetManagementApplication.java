@@ -24,5 +24,6 @@ public class BudgetManagementApplication {
         System.setProperty("spring.jpa.properties.hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
 
         SpringApplication.run(BudgetManagementApplication.class, args);
+        System.out.println(">>> Budget-Management-Application FIN DE COMPILATION >>>>>>");
     }
 }
