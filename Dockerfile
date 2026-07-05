@@ -25,4 +25,5 @@ COPY --from=build /app/target/*.jar app.jar
 EXPOSE 8080
 
 # Commande de démarrage de Spring Boot
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-Dserver.port=${PORT}", "-jar", "app.jar"]
+
